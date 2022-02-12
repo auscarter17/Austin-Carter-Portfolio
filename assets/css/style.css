@@ -1,3 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    padding: 20px;
+    color: #fff;
+    background-color: #242038;
+}
+
 header h1 {
     font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    margin: 0;
+    display: inline;
+    font-size: 50px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    float: right;
+    margin: 25px 0;
+}
+
+header nav ul {
+    align-items: center;
+    font-size: larger;
+}
+
+header nav ul li {
+    color: #fff;
+    display: inline;
+    border-right: 1px solid #8d87c9;
+}
+
+header nav ul li:last-child {
+    border-right: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    margin: 0 30px;
 }
