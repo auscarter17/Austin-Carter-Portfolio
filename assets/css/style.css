@@ -65,3 +65,73 @@ header nav ul li a:hover {
     display: flex;
     background-color: #9067c6;
 }
+
+.left-set {   
+    margin:25px;
+    min-width:250px;
+    max-width: 250px;
+    height:250px;
+    
+}
+.comic-box {
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    transform: rotate(2deg);
+    background-image: url(../images/austin.jpg);
+    background-size:cover;
+}
+
+.comic-box h2 {
+    transform: rotate(2deg);
+    margin:5px;
+    padding:0 5px;
+    float:right;
+    background:#ddd;
+    border:3px solid #222;
+    box-shadow:3px 3px 0 #222;
+}
+
+.right-set {
+    margin: 50px;
+    padding: 0 50px;
+    text-align: left;
+    border-left: 3px solid #242038;
+}
+
+.right-set ul {
+    display:flex;
+}
+
+/* END OF ABOUT SECTION */
+
+/* START OF PROJECTS SECTION */
+
+.showcase {
+    background-color: #cac4ce;
+    display: flex;
+}
+
+/* FOOTER */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #8D86C9;
+}
+
+.links {
+    margin: 50px;
+    padding: 0 50px;
+    justify-content: space-evenly;
+    border-left: 3px solid #242038;
+}
+
+.links li {
+    margin: 0 25px;
+}
+
+.links ul li {
+    display:inline-block;
+    text-align: justify;
+    list-style: none;
+    font-size: 22px;
+}
