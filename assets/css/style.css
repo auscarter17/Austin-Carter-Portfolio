@@ -66,6 +66,7 @@ header nav ul li a:hover {
     background-color: #9067c6;
 }
 
+/* use in each section to keep border in line */
 .left-set {   
     margin:25px;
     min-width:250px;
@@ -73,12 +74,16 @@ header nav ul li a:hover {
     height:250px;
     
 }
+/* comic-box reused in each section, add new background url for each section */
 .comic-box {
     border-width: 3px 4px 3px 5px;
     border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
     transform: rotate(2deg);
-    background-image: url(../images/austin.jpg);
     background-size:cover;
+}
+
+.face {
+    background-image: url(../images/austin.jpg);
 }
 
 .comic-box h2 {
@@ -102,7 +107,6 @@ header nav ul li a:hover {
     display:flex;
 }
 
-/* END OF ABOUT SECTION */
 
 /* START OF PROJECTS SECTION */
 
@@ -111,7 +115,11 @@ header nav ul li a:hover {
     display: flex;
 }
 
-/* FOOTER */
+.project-graphic {
+    background-image: url(../images/projects-graphic.jpg);
+}
+
+/* CONTACT ME SECTION */
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -125,13 +133,27 @@ header nav ul li a:hover {
     border-left: 3px solid #242038;
 }
 
-.links li {
-    margin: 0 25px;
+.links ul {
+    padding: 80px;
 }
 
 .links ul li {
-    display:inline-block;
+    display:inline-flex;
     text-align: justify;
     list-style: none;
     font-size: 22px;
+    padding:10px;
+    margin: 0 25px;
+}
+
+.links ul li a {
+    text-decoration: none;
+}
+
+.contact-graphic {
+    background-image: url(../images/contact-me.jpg);
+}
+
+footer {
+    background-color:#cac4ce;
 }
