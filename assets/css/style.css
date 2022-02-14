@@ -113,19 +113,31 @@ header nav ul li a:hover {
 .showcase {
     background-color: #cac4ce;
     display: flex;
+    align-items: flex-start;
 }
 
 .project-graphic {
     background-image: url(../images/projects-graphic.jpg);
 }
 
-.application {
-    display: flex;
-    flex-wrap: wrap;
+.applications {
+    max-width:100%;  
+}
+
+.applications img {
+    width:33%;
+    padding:15px;
     position:relative;
 }
 
-.application img:hover {
+.applications img:first-child {
+    width:100%;
+}
+
+
+
+
+.applications img:hover {
     opacity:0.5;
     transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
@@ -133,27 +145,11 @@ header nav ul li a:hover {
     -o-transition: opacity .2s ease-out;
 }
 
-.application:first-child img {
-    max-width: 100%;
-    height: auto;
-}
-
-.app-name {
-    position: absolute;
-    bottom: 80px;
-    right: 16px;
-    font-size: 30px;
-    color: #fff;
-    visibility: hidden;
-    text-shadow: 2px 2px #000000;
-    border: solid #8D86C9 2px;
-    background-color:#9067c6;
-    border-radius: 100%;
-}
-
-.application:hover .app-name {
+.applications img:hover .rbtxt{
     visibility: visible;
+    opacity:1;
 }
+
 
 /* CONTACT ME SECTION */
 .contact {
@@ -166,7 +162,6 @@ header nav ul li a:hover {
     margin: 50px;
     padding: 0 50px;
     justify-content: space-evenly;
-    border-left: 3px solid #242038;
 }
 
 .links ul {
@@ -180,6 +175,7 @@ header nav ul li a:hover {
     font-size: 22px;
     padding:10px;
     margin: 0 25px;
+    justify-content: center;
 }
 
 .links ul li a {
