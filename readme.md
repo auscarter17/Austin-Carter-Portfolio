@@ -10,6 +10,8 @@ The top of the page has navigation buttons that will take the user to the differ
 
 The projects section includes currently launched projects, as well as placeholders for future projects to be added later. Click any of the images to be taken to the site shown in the thumbnail.
 
+Click [here](https://auscarter17.github.io/Austin-Carter-Portfolio/) to be taken to the site.
+
 ## CONTACT
 
 This section contains links where you can contact me and find more info about me. The "email me" button will take you to your default email client and pre-fill my email address. The LinkedIn and GitHub buttons will take you to my profile. on each of these websites. 
