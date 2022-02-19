@@ -161,7 +161,8 @@ header nav ul li a:hover {
 .links {
     margin: 50px;
     padding: 0 50px;
-    justify-content: space-evenly;
+    justify-content: center;
+    float:right;
 }
 
 .links ul {
@@ -169,7 +170,7 @@ header nav ul li a:hover {
 }
 
 .links ul li {
-    display:inline-flex;
+    display:inline-block;
     text-align: justify;
     list-style: none;
     font-size: 22px;
@@ -188,4 +189,105 @@ header nav ul li a:hover {
 
 footer {
     background-color:#cac4ce;
+    text-align: right;
+    padding: 30px;
+}
+
+.applications {
+    flex: 0 100%;
+}
+
+/* MEDIA QUERY FOR MOBILE */
+
+@media screen and (max-width: 980px) {
+
+
+    .austin {
+        width:100%;
+        flex-wrap: wrap;
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .left-set {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em;
+    }
+
+    .right-set {
+        width:100%;
+        border-left: none;
+        padding: 20px;
+    }
+
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .applications {
+        flex-direction: column;
+    }
+
+    .showcase {
+        flex-wrap: wrap;
+        border-top: 3px solid #242038;
+    }
+
+    .contact {
+        border-top: 3px solid #242038;
+        justify-content: center;
+        flex-wrap:wrap;
+        width: 100%;
+    }
+    .links ul li a{
+          font-size: 30px;
+    }
+
+    footer {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .applications img {
+        width: 100%;
+    }
+
+    .links {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .austin {
+        font-size: 55px;
+    }
+
+    footer {
+        font-size:50px;
+    }
 }
